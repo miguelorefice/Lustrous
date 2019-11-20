@@ -1,0 +1,213 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body:before {
+	content: ' ';
+    position: fixed;
+  	background-image: url(https://h4sj2q.ch.files.1drv.com/y4mCof80uLYiee9C7SgyUmhVdGfFPC0w3IoKVvG75yZlJivw1D_VSmdzMSY5rY9B-hm_2-OtoZQnxkp80h6rSfER27uCjYJApgkxsmnbPsL6LQAbuWorg5ORc27PY2B48eD4_2p9RyaVjuYewr4ITIx52tlWGzkCEjizydEkcpcpS4Lvs5ZdqA8FeFlqLFAhHk8DP9yjfHQLfh6Su-kO__P3g);
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-attachment: fixed;
+  	width: 100%;
+  	height: 100%;
+  	opacity: 0.05;
+}
+
+#header	{
+	position: fixed;
+	display: flex;
+    top: 0;
+    left: 0;
+	justify-content: space-between;
+	color: #fff;
+  	background-color: #111111;
+  	width: 100%;
+  	padding-left: 15px;
+  	margin-right: auto;
+  	margin-left: auto;
+  	z-index: 1;
+}
+
+#banner {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+  	background-color: #242323;
+  	height: 680px;
+    left: 0px;
+  	width: 100%;
+  	overflow: hidden;
+  	background-image: linear-gradient(to right, rgba(95, 0, 0, 0.7), rgba(33, 33, 37, 0.7)), 
+	url("https://g4sj2q.ch.files.1drv.com/y4mTCLdFD6HrGkKQruRNq_iGduIdj64RLIMiD-gmnl2wnN8UKLrnZbqK2xfRlymT1dZEezZqm0-RE13o2qSpQsU1wOq0EJLULL6KgLohtdtaRY966_wbS1li2nTUAH-VX9DK9q5Z7yree9rJ_Dz3x-BQoMJbFjF0D7Q3wx3_kkp960_1a-UEbtLj8vYlJK2xs-mRHSo7kCLF8Uerq4ZT-3tAQ")
+  }
+
+.inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+	text-align: center;	
+    font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 24px;
+    line-height: 40px; 
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+  
+}
+
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    left:0;   
+    padding: 120px 0 90px 0;
+}
+
+
+.highlights{
+    text-align: center;
+	font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 17px;
+    color: rgba(#444444);
+    line-height: 29px;
+    font-weight: 400;
+    
+    
+}
+
+
+#icons{     
+    left:0;
+    padding: inherit;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-flow: wrap column;
+    text-align: center;
+	font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 15px;
+    color: rgba(#444444);
+    line-height: 24px;
+    font-weight: 400;
+    width: ???;
+    height: ???;
+    box-sizing: inherit;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+
+/*HEADLINES*/
+
+h1{  
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 59px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+h2{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 39px;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: 300;
+}
+
+h3{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Raleway", Arial, Helvetica, "sans-serif";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #555555;
+    font-weight: 300;
+}
+
+
+/*LINKS*/
+
+/* unvisited link */
+
+.lust
+{
+    font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 17px;
+    color: #ffffff;
+    line-height: 56px;
+    font-weight: 600;
+    height:58px;
+    text-decoration: none;
+}
+
+/* visited link */
+.lust:visited {
+  	font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 17px;
+    color: red;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+/* mouse over link */
+.lust:hover {
+  	font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 17px;
+    color: #000;
+    line-height: 56px;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px #fff;
+}
+
+/* selected link */
+.lust:active {
+  	font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 17px;
+    color: blue;
+    line-height: 56px;
+    font-weight: 600;
+}
+
+.templated{
+	font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 43px;
+    font-weight: 400;
+    text-decoration: none;
+}
+}
+
+.templated:hover {
+  	font-family: Raleway, Arial, Helvetica, "sans-serif";
+    font-size: 26px;
+    color: #fff;
+    line-height: 43px;
+    font-weight: 400;
+    text-decoration: none;
+    transition:all 1s ease;
+	-webkit-transition-delay:all 1s ease;
+	-moz-transition-delay:all 1s ease;
+	-ms-transition-delay:all 1s ease;
+	-o-transition-delay:all 1s ease;
+}
+
+/*HAMBURGER*/
+
