@@ -1,6 +1,6 @@
 /* Import Fonts */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 
 /*Import Fonts end*/
 
@@ -10,6 +10,7 @@
 * {
   border: 0;
   box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
   margin: 0;
   outline: none;
   padding: 0;
@@ -18,13 +19,13 @@
 body::before {
   background-attachment: fixed;
   background-image: url(../images/bg.jpg);
-  position: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
-  opacity: .05;
+  opacity: 0.05;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: -1;
@@ -44,8 +45,6 @@ textarea {
 
 /* global settings end */
 
-
-
 /* header */
 
 #header {
@@ -56,12 +55,13 @@ textarea {
   height: 47px;
   justify-content: space-between;
   padding: 12px 20px;
+  position: fixed;
   width: 100%;
 }
 
 #header .title {
   color: #ffffff;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 48px;
@@ -71,7 +71,7 @@ textarea {
   color: #444444;
   display: flex;
   align-items: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 48px;
@@ -97,33 +97,12 @@ textarea {
   width: 300px;
   height: 100%;
   padding: 10px;
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #header .navigation.active {
   right: 0;
 }
-
-/* space helps to call specific elements and give them unique properties while in other groups 
-.menu .burger {
-    display: flex;
-    height: 12px;
-    width: 19px;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-right: 6px;
-      moz-transition: color 0.2s ease-in-out;
-      -ms-transition: color 0.2s ease-in-out;
-      transition: color 0.2s ease-in-out;
-      -webkit-transition: color 0.2s ease-in-out;
-}
-
-.menu .burger .ic-burger {
-  background-color: #444444;
-  display: block;
-  height: 2px;
-  width: 100%;
-}*/
 
 ul li {
   border-bottom: 1px solid #fff;
@@ -133,20 +112,19 @@ ul li {
   border-bottom: 0;
 } */
 
-
 /* header end */
-
-
 
 /*banner*/
 
 #banner {
   align-items: center;
   background-color: #242323;
-  background-image: linear-gradient(to right, rgba(95, 0, 0, 0.7), rgba(33, 33, 37, 0.7)),
+  background-image: linear-gradient(to right,
+      rgba(95, 0, 0, 0.7),
+      rgba(33, 33, 37, 0.7)),
     url(../images/banner.jpg);
   display: flex;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   height: 510px;
   justify-content: center;
   overflow: hidden;
@@ -163,7 +141,7 @@ ul li {
   justify-content: center;
 }
 
-#banner .inner h1 {
+#banner .inner .industri {
   color: #ffffff;
   font-size: 59px;
   font-weight: 300;
@@ -176,15 +154,11 @@ ul li {
 
 /* banner end */
 
-
-
-/*section cards*/
+/* cards */
 
 #cards {
-  /* align-items: center; */
   color: #444444;
-  /* display: flex; */
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: 400;
   justify-content: center;
@@ -205,15 +179,102 @@ ul li {
 }
 
 #cards .header .paracard {
-      max-width: 75%;
-      display: block;
-      margin: 0 auto;
+  display: block;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
-#cards .row div {
-  min-height: 200px;
-  background-color: #CCC;
+#cardsrow {
+  padding: 60px 0 0 0;
 }
-#cards .row div:nth-child(2n+2) {
-  background-color: #707070;
+
+#cardsrow .boxrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
+
+#cardsrow .boxrow .boxw {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 16px;
+  width: 20%;
+  padding: 48px;
+  text-align: center;
+}
+
+#cardsrow .boxrow .boxw .smallbox {
+  color: #555555;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 28px;
+  padding: 0 0 20px 0;
+}
+
+#cardsrow .boxrow .boxw .boxcard {
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 24px;
+}
+
+#cardsrow .boxrow .boxw .icontop {
+  color: #ce1b28;
+  font-size: 87px;
+  font-weight: 400;
+  line-height: 143px;
+}
+
+/* cards end */
+
+/* red banner */
+
+#redwrapper {
+  align-items: center;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right,
+      rgba(206, 27, 40, 0.25),
+      rgba(206, 27, 40, 0.25)),
+    url(../images/redbuilding.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  height: 400px;
+  justify-content: center;
+  margin: 130px 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+#redwrapper .redbanner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#redwrapper .redbanner .inred {
+  color: #ffffff;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 51px;
+  padding: 0 0 25px 0;
+}
+
+#redwrapper .redbanner .redpara {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+/* red banner end */
+
+/* quotes */
+
