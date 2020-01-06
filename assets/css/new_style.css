@@ -31,6 +31,50 @@ body::before {
   z-index: -1;
 }
 
+  @media screen and (max-width: 1680px) {
+    html {
+      font-size: 11pt;
+      } }
+  @media screen and (max-width: 980px) {
+    html {
+      font-size: 12pt; } }
+  @media screen and (max-width: 480px) {
+    html {
+      font-size: 11pt; } }
+  @media screen and (max-width: 736px) {
+  h1 {
+    font-size: 44px;
+    line-height: 21px; }
+
+  h2 {
+    font-size: 28px;
+    line-height: 24px; }
+
+  h3 {
+    font-size: 20px; } }
+    
+input, select, textarea {
+  color: #555555; }
+
+a {
+  color: #ce1b28; }
+
+strong, b {
+  color: #555555; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #555555; }
+
+blockquote {
+  border-left-color: rgba(0, 0, 0, 0.25); }
+
+code {
+  background: rgba(0, 0, 0, 0.075);
+  border-color: rgba(0, 0, 0, 0.25); }
+
+hr {
+  border-bottom-color: rgba(0, 0, 0, 0.25); }
+
 ul {
   list-style: none;
 }
@@ -119,9 +163,11 @@ ul li {
 #banner {
   align-items: center;
   background-color: #242323;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(95, 0, 0, 0.7),
-      rgba(33, 33, 37, 0.7)),
+      rgba(33, 33, 37, 0.7)
+    ),
     url(../images/banner.jpg);
   display: flex;
   font-family: "Raleway", sans-serif;
@@ -197,10 +243,10 @@ ul li {
 
 #cardsrow .boxrow .boxw {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 4px;
   margin: 16px;
   width: 20%;
-  padding: 48px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -235,9 +281,11 @@ ul li {
 #redwrapper {
   align-items: center;
   background-attachment: fixed;
-  background-image: linear-gradient(to right,
+  background-image: linear-gradient(
+      to right,
       rgba(206, 27, 40, 0.25),
-      rgba(206, 27, 40, 0.25)),
+      rgba(206, 27, 40, 0.25)
+    ),
     url(../images/redbuilding.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -278,3 +326,94 @@ ul li {
 
 /* quotes */
 
+#quotes {
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 29px;
+  padding: 0px 0 0 0;
+}
+
+#quotes .header {
+  text-align: center;
+}
+
+#quotes .header .title-quote {
+  color: #555555;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 51px;
+  padding: 0 0 20px 0;
+}
+
+#quotes .header .paraquote {
+  display: block;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+#quotesrow {
+  padding: 60px 0 0 0;
+}
+
+#quotesrow .cuberow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#quotesrow .cuberow .cubew {
+  background-color: #ffffff;
+    border-radius: 2px;
+    margin: 25px;
+    width: 20%;
+    padding: 40px 0px 40px 40px;
+    text-align: center;
+}
+
+#quotesrow .cuberow .cubew .cubecard {
+  border-left: 7.5px solid rgba(0, 0, 0, 0.25);
+  color: #444444;
+  font-family: "Raleway", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+  padding: 15px 0px 15px 35px;
+  text-align: left;
+}
+
+#quotesrow .cuberow .cubew .author {
+  align-items: center;
+  color: #444444;
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+#quotesrow .cuberow .cubew .author .photo {
+  margin-right: 5px;
+  width: 20%;
+}
+
+#quotesrow .cuberow .cubew .author .photo img {
+  border-radius: 100%;
+  display: block;
+  max-width: 100%;
+}
+
+#quotesrow .cuberow .cubew .author .sig {
+  margin: 30px;
+}
+
+  #quotesrow .cuberow .cubew .author .sig strong {  
+    color: #ce1b28;
+  }
+
+/* quotes end */
